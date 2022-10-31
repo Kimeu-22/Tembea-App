@@ -25,5 +25,54 @@
       </ion-radio-group>
     </ion-list>
   </ion-card>
-
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>
+        Traveling accompainment
+      </ion-card-title>
+    </ion-card-header>
+    <ion-list>
+      <ion-radio-group [allowEmptySelection]="true" value="Friends">
+        <ion-item>
+          <ion-label>Friends</ion-label>
+          <ion-radio slot="end" value="Friends"></ion-radio>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label>Alone</ion-label>
+          <ion-radio slot="end" value="Alone"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label>Couple</ion-label>
+          <ion-radio slot="end" value="Couple"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>
+        Contact
+      </ion-card-title>
+    </ion-card-header>
+    <ion-list>
+      <ion-item>
+        <ion-label position="floating">Name</ion-label>
+        <ion-input type ="text" placeholder="Full name"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Email Address</ion-label>
+        <ion-input type ="email" placeholder="youremail@domain.com"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Password</ion-label>
+        <ion-input type ="password"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Confirm password</ion-label>
+        <ion-input type ="password"></ion-input>
+      </ion-item>
+    </ion-list>
+  </ion-card>
+  <ion-button size="full" color="light">Register</ion-button>
 </ion-content>
