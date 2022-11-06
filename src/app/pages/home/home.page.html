@@ -8,10 +8,25 @@
 </ion-header>
 
 <ion-content>
-  <swiper [autoplay]="true" [pagination]="true" [scrollbar]="true" [zoom]="true" [loop]="true">
-    <ng-template swiperSlide>Slide 1</ng-template>
-    <ng-template swiperSlide>Slide 2</ng-template>
-    <ng-template swiperSlide>Slide 3</ng-template>
+  <swiper [autoplay]="true" [zoom]="true" [loop]="true">
+    <ng-template swiperSlide>
+      <ion-card> 
+        <img src="assets/images/Site1.png"> 
+      </ion-card>
+    </ng-template>
+
+    <ng-template swiperSlide>
+      <ion-card> 
+        <img src="assets/images/Site2.png"> 
+      </ion-card>
+    </ng-template>
+    
+    <ng-template swiperSlide>
+      <ion-card> 
+        <img src="assets/images/Site3.png"> 
+      </ion-card>
+    </ng-template>
   </swiper>
+  
 </ion-content>
 
