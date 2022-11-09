@@ -12,6 +12,14 @@ export class HomePage implements OnInit {
 
   constructor() { }
 
+  swiper = {
+    slidePerView: 1.5,
+    centeredSlide: true,
+    spaceBetween: 5,
+    autoplay: true,
+    loop: true,
+  }
+
   ngOnInit() {
   }
 

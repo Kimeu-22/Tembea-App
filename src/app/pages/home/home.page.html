@@ -3,12 +3,12 @@
     <ion-buttons slot="start">
     <ion-menu-button autoHide="false"></ion-menu-button>
     </ion-buttons>
-    <ion-title>Tembea</ion-title>
+    <ion-title>Tembea </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <swiper [autoplay]="true" [zoom]="true" [loop]="true">
+  <swiper [options]="option">
     <ng-template swiperSlide>
       <ion-card> 
         <img src="assets/images/Site1.png"> 
@@ -27,6 +27,27 @@
       </ion-card>
     </ng-template>
   </swiper>
+
+  <ion-searchbar show-clear-button="focus" fill="clear" lines="none"
+  placeholder="Search for destinations,memories...">
+  </ion-searchbar>
+
+  <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+    <ion-fab-button>
+      <ion-icon name="chevron-up-circle"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button>
+        <ion-icon name="add" color="secondary"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button>
+        <ion-icon name="globe" color="secondary"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button>
+        <ion-icon name="accessibility" color="secondary"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
   
 </ion-content>
 
