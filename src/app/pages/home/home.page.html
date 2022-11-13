@@ -8,7 +8,7 @@
 </ion-header>
 
 <ion-content>
-  <swiper [options]="option">
+  <swiper>
     <ng-template swiperSlide>
       <ion-card> 
         <img src="assets/images/Site1.png"> 
@@ -31,6 +31,10 @@
   <ion-searchbar show-clear-button="focus" fill="clear" lines="none"
   placeholder="Search for destinations,memories...">
   </ion-searchbar>
+
+  <ion-card>
+    <!-- This card will display the results from the search button -->
+  </ion-card>
 
   <ion-fab slot="fixed" vertical="bottom" horizontal="end">
     <ion-fab-button>
