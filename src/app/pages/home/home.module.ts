@@ -10,17 +10,17 @@ import { HomePage } from './home.page';
 
 import { SwiperModule } from 'swiper/angular';
 
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
     HomePageRoutingModule,
-    SwiperModule
+    SwiperModule,
   ],
   declarations: [
     HomePage,
-    SwiperModule
   ],
   schemas: [NO_ERRORS_SCHEMA]
 })

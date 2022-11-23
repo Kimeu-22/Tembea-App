@@ -1,0 +1,21 @@
+<!-- This whole section is a reusable component from the search results of the home page -->
+<ion-card>
+  <ion-card-content>
+      <img src="assets/images/Site1.png"> 
+  </ion-card-content>  
+  <ion-card-content>
+    <p>Location: {{location}}</p>
+    <p>Charges: {{charges}}</p>
+  </ion-card-content>
+  <ion-button shape="round">Plan</ion-button>   
+  <ion-list>
+    <ion-item lines="insert">
+      <ion-label position="floating">Review</ion-label>
+      <ion-textarea></ion-textarea>
+    </ion-item>
+    <!-- Can I have a card within a list  or another list -->
+    <ion-item>
+      <!--Insert a list of previous reviews from travellers about the place-->
+    </ion-item>
+  </ion-list>
+</ion-card>
